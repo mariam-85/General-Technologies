@@ -1,0 +1,39 @@
+Homework by SQL, Lesson1
+
+Task1.
+В онлайн редакторе (https://www.programiz.com/sql/online-compiler/) создайте таблицу Employees, используя txt-файл с прошлого занятия.
+Done 
+
+Task2.
+SELECT first_name, last_name
+FROM Employees
+WHERE employee_id >=106 AND employee_id <=115;
+
+Task3.
+SELECT first_name, last_name
+FROM Employees
+WHERE employee_id >106 AND employee_id <115;
+
+Task4.
+SELECT first_name, last_name
+FROM Employees
+WHERE last_name
+LIKE ('K%');
+
+Task5.
+SELECT first_name, last_name
+FROM Employees
+WHERE last_name
+LIKE ('%n');
+
+Task6.
+SELECT first_name, last_name, job_id
+FROM Employees
+WHERE job_id = 'ST_MAN';
+
+Task7.
+SELECT first_name, last_name, manager_id
+FROM Employees
+WHERE manager_id
+IN (100, 103);
+
