@@ -1,0 +1,66 @@
+Homework by SQL_Tasks, Lesson1
+
+Task1.
+
+Вывести все (только) имена клиентов.
+
+SELECT ContactName
+FROM Customers;
+
+
+Task 2.
+
+Вывести клиентов из Берлина, имена которых содержат слово "del".
+
+SELECT *
+FROM Customers
+WHERE ContactName LIKE ('%del')
+AND City = 'Berlin';
+
+
+Task 3.
+
+Вывести контактные имена клиентов из Лондона.
+
+SELECT ContactName
+FROM Customers
+WHERE City = 'London';
+
+Task 4.
+
+Создать таблицу Users с полями id, name, phone, country и добавить туда несколько пользователей.
+
+CREATE TABLE Users (
+     id         NUMERIC(4) NOT NULL,
+     name       VARCHAR(30) NOT NULL,
+     phone      NUMERIC(20) NOT NULL,
+     country    VARCHAR(15) NOT NULL
+     );
+
+
+INSERT INTO Users (
+  id,
+  name,
+  phone,
+  country
+  ) VALUES (
+    01,
+    'Mariam Lofink',
+    017672751193,
+    'Germany'
+    ),(
+    02,
+    'Nelly Efremyan',
+    1234567891011,
+    'Armenia'
+    ),(
+    03,
+    'Sabina Stavinska',
+    0987654321,
+    'Finland'
+    ),(
+    04,
+    'Ivan Ivanov',
+    5555555555,
+    'Russia'
+    );
