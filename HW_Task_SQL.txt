@@ -14,7 +14,7 @@ Task 2.
 
 SELECT *
 FROM Customers
-WHERE ContactName LIKE ('%del')
+WHERE ContactName LIKE '%del'
 AND City = 'Berlin';
 
 

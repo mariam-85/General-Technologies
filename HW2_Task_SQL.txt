@@ -1,0 +1,50 @@
+Homework by SQL_Tasks, Lesson2
+
+Task1.
+
+// Изменить город всех клиентов из Лондона на Бристоль.
+
+UPDATE Customers
+SET City='Bristol'
+WHERE City='London';
+
+
+Task 2.
+
+// Изменить адрес клиента с CustomerID=18 на новый '15 Tsawassen Blvd'.
+
+UPDATE Customers
+SET Address = '15 Tsawassen Blvd'
+WHERE CustomerID=18;
+
+
+Task 3.
+
+// Удалить заказы 10257, 10258, 10259, 10260.
+
+DELETE FROM Orders
+WHERE OrderID BETWEEN 10257 AND 10260;
+
+Task 4.
+
+// Изменить поставщика (ShipperID) для заказов 10266, 10275, 10277, 10278 на значение 19.
+
+UPDATE Orders
+SET ShipperID=19
+WHERE OrderID IN (10266, 10275, 10277, 10278);
+
+Task 5.
+
+// Вывести все товары (products) с ценой выше 60.
+
+SELECT * FROM Products
+WHERE Price > 60;
+
+Task 6.
+
+// Удалить таблицу CLIENTS.
+
+DROP TABLE Customers;
+
+
+
