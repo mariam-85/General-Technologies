@@ -1,0 +1,73 @@
+
+Работа с БД
+
+-- создание БД
+CREATE DATABASE database_name;
+
+-- удаление БД
+DROP DATABASE database_name; 
+
+-- просомтр списока всех БД
+SHOW DATABASES;
+
+
+
+
+Работа с таблицами
+
+-- создание таблицы
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+); 
+
+-- удаление таблицы 
+DROP TABLE table_name;
+
+
+
+
+
+ALTER TABLE - изменение столбцов
+
+-- добавление нового поля
+ALTER TABLE table_name
+ADD column_name datatype;
+
+-- удаление поля
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+-- изменение поля (тип данных)
+ALTER TABLE table_name
+MODIFY COLUMN column_name datatype;
+
+-- изменение имени поля
+ALTER TABLE table_name 
+CHANGE old_column_name new_col_name datatype;
+
+
+
+
+UPDATE - изменение данных
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+set sql_safe_updates = 0;
+
+
+
+DELETE - удаление данных
+
+--удаление строки
+DELETE FROM table_name 
+WHERE condition;
+
+-- удаление всего содержимого таблицы
+DELETE FROM table_name;
+
+set sql_safe_updates = 0;

@@ -1,0 +1,49 @@
+Homework by SQL_Tasks, Lesson3
+
+Task1.
+
+// Создание таблицы с индексом "не пустой", "уникальный" для поля ID.
+
+CREATE TABLE Employees_2 (
+     id         NUMERIC(4) NOT NULL UNIQUE,
+     name       VARCHAR(30) NOT NULL,
+     phone      NUMERIC(20) NOT NULL
+     );
+
+INSERT INTO Employees_2 (
+  id,
+  name,
+  phone
+  ) VALUES (
+    01,
+    'Mariam Lofink',
+    0175786950849),
+    (02,
+    'Alex Wilhelm',
+    0175485757776
+    ), (03,
+    'Michael Bred',
+    0173478753928
+    ), 
+    (04,
+    'Denis Schwabauer',
+    0178402734095
+    );
+
+Task 2.
+
+// Вывод количества сотрудников.
+
+SELECT COUNT(*) AS total
+FROM Employees_2
+
+Task 3.
+
+// Укажите разницу между CRUD и Aggregation в БД.
+
+
+С помощью CRUD мы просто работаем с имеющимися данными(Создаем, считываем, фильтруем, изменяем, удаляем). При агрегации мы объединяем и преобразуем данные по какому-либо признаку.
+
+
+
+
