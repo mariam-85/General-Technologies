@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 CREATE TABLE Clients (\
+     id         NUMERIC(4) NOT NULL,\
+     name       VARCHAR(30) NOT NULL,\
+     phone      NUMERIC(20) NOT NULL\
+     );\
+\
+\
+CREATE TABLE Customers (\
+     id         NUMERIC(4) NOT NULL UNIQUE,\
+     name       VARCHAR(30) NOT NULL,\
+     phone      NUMERIC(20) NOT NULL\
+     );\
+\
+INSERT INTO Customers (\
+  id,\
+  name,\
+  phone\
+  ) VALUES (\
+    01,\
+    'Mariam Lofink',\
+    0175786950849\
+    );\
+\
+INSERT INTO Customers (\
+  id,\
+  name,\
+  phone\
+  ) VALUES (\
+    02,\
+    'Alex Lofink',\
+    0175788493856\
+    );\
+\
+\
+SELECT COUNT(*) AS total\
+FROM Customers\
+\
+SELECT AVG(Price) AS avg_price,\
+       MIN(Price) AS min_price,\
+       MAX(Price) AS max_price\
+FROM Products\
+\
+SELECT ProductID,\
+       Price AS Price_euro,\
+       Price*138 AS Price_JPY\
+FROM Products\
+}
