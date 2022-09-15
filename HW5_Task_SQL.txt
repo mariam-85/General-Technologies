@@ -1,0 +1,33 @@
+Homework by SQL_Tasks, Lesson5
+
+Task1.
+
+// Коротко опишите отличие между операторами INNER JOIN и LEFT JOIN и дополните ответ примерами запросов.
+
+Ключевое слово INNER JOIN выбирает записи, имеющие совпадающие значения в обеих таблицах.
+
+SELECT t1.OrderID, t2.CustomerName
+FROM Orders t1
+INNER JOIN Customers t2 ON t1.CustomerID = t2.CustomerID; //Bсе заказы с информацией о клиенте
+
+Ключевое слово LEFT JOIN возвращает все записи из левой таблицы (table1) и соответствующие записи из правой таблицы (table2). Результат будет нулевым с правой стороны, если нет совпадения.
+
+SELECT t1.CustomerName, t2.OrderID
+FROM Customers t1
+LEFT JOIN Orders t2 ON t1.CustomerID = t2.CustomerID;//Bсе клиенты и любые заказы, которые они могут иметь
+
+
+
+Task 2.
+
+// Коротко опишите, в каком случае корректнее использовать оператор RIGHT JOIN и дополните ответ примером.
+
+Ключевое слово RIGHT JOIN возвращает все записи из правой таблицы (table2) и совпадающие записи из левой таблицы (table1). Результат равен нулю с левой стороны, когда нет совпадения.
+
+SELECT t1.OrderID, t2.LastName, t2.FirstName
+FROM Orders t1
+RIGHT JOIN Employees t2 ON t1.EmployeeID = t2.EmployeeID
+ORDER BY t1.OrderID;//все сотрудники и все заказы, которые они могли бы разместить
+
+
+
