@@ -1,0 +1,12 @@
+Homework_2 by MongoDB_Tasks
+
+Справочная документация:
+https://www.mongodb.com/docs/manual/reference/operator/update/set/
+https://www.mongodb.com/docs/manual/reference/operator/update/inc/
+https://www.mongodb.com/docs/manual/reference/operator/update/mul/
+https://www.mongodb.com/docs/manual/reference/operator/update/unset/
+
+
+Ознакомилась.
+
+
