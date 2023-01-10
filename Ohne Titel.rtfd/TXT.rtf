@@ -1,0 +1,2571 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red251\green2\blue7;\red0\green0\blue0;
+\red248\green250\blue249;\red25\green37\blue46;\red128\green0\blue0;\red128\green128\blue0;\red0\green0\blue128;
+\red152\green66\blue3;\red22\green21\blue22;\red152\green0\blue15;\red19\green85\blue52;\red89\green138\blue67;
+\red23\green23\blue23;\red202\green202\blue202;\red140\green211\blue254;\red212\green214\blue154;\red194\green126\blue101;
+\red167\green197\blue152;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;
+\cssrgb\c97647\c98431\c98039;\cssrgb\c12941\c19216\c23529;\csgenericrgb\c50196\c0\c0;\csgenericrgb\c50196\c50196\c0;\csgenericrgb\c0\c0\c50196;
+\cssrgb\c66667\c33333\c0;\cssrgb\c11373\c10980\c11373;\cssrgb\c66667\c6667\c6667;\cssrgb\c6667\c40000\c26667;\cssrgb\c41569\c60000\c33333;
+\cssrgb\c11765\c11765\c11765;\cssrgb\c83137\c83137\c83137;\cssrgb\c61176\c86275\c99608;\cssrgb\c86275\c86275\c66667;\cssrgb\c80784\c56863\c47059;
+\cssrgb\c70980\c80784\c65882;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \uc0\u1053 \u1072  \u1087 \u1088 \u1072 \u1082 \u1090 \u1080 \u1082 \u1077  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1102 \u1090 \u1089 \u1103  \u1089 \u1083 \u1077 \u1076 . "\u1089 \u1074 \u1103 \u1079 \u1082 \u1072 " \u1080 \u1079  \u1041 \u1044 :\
+	- \uc0\u1055 \u1077 \u1088 \u1074 \u1080 \u1095 \u1085 \u1072 \u1103  (primary) - \u1085 \u1072 \u1087 \u1088 ., MongoDB\
+	- \uc0\u1042 \u1090 \u1086 \u1088 \u1080 \u1095 \u1085 \u1072 \u1103  (secondary) - \u1085 \u1072 \u1087 \u1088 ., Redis\
+______________________________________________________________________________________\
+\
+\uc0\u1041 \u1044  - \u1101 \u1090 \u1086  \u1089 \u1090 \u1088 \u1091 \u1082 \u1090 \u1091 \u1088 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1099 \u1081  \u1085 \u1072 \u1073 \u1086 \u1088  \u1076 \u1072 \u1085 \u1085 \u1099 \u1093 , \u1087 \u1088 \u1077 \u1076 \u1085 \u1072 \u1079 . \u1076 \u1083 \u1103  \u1072 \u1074 \u1090 \u1086 \u1084 \u1072 \u1090 \u1080 \u1079 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1086 \u1081  (\u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1085 \u1086 \u1081 ) \u1086 \u1073 \u1088 \u1072 \u1073 \u1086 \u1090 \u1082 \u1080 \
+\
+\uc0\u1044 \u1072 \u1085 \u1085 \u1099 \u1077 : 3.14, 2.7, 1000, 'hello', '\u1086 \u1090 \u1087 \u1088 \u1072 \u1074 \u1083 \u1077 \u1085 \u1086 '\
+\uc0\u1048 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103 : "\u1076 \u1074 \u1077 \u1088 \u1100  \u1089 \u1090 \u1086 \u1080 \u1090  1000 EURO"\
+\uc0\u1057 \u1074 \u1077 \u1076 \u1077 \u1085 \u1080 \u1103 : "\u1076 \u1074 \u1077 \u1088 \u1100  \u1089 \u1090 \u1086 \u1080 \u1090  1000 EURO - \u1076 \u1083 \u1103  \u1085 \u1072 \u1096 \u1077 \u1081  \u1082 \u1086 \u1084 \u1087 \u1072 \u1085 \u1080 \u1080  \u1101 \u1090 \u1086  \u1076 \u1086 \u1088 \u1086 \u1075 \u1086 "\
+\
+______________________________________________________________________________________\
+\
+\
+\uc0\u1050 \u1051 \u1048 \u1045 \u1053 \u1058 -\u1057 \u1045 \u1056 \u1042 \u1045 \u1056 \u1053 \u1040 \u1071  \u1040 \u1056 \u1061 \u1048 \u1058 \u1045 \u1050 \u1058 \u1059 \u1056 \u1040 \
+\
+\uc0\u1069 \u1090 \u1086  \u1089 \u1087 \u1086 \u1089 \u1086 \u1073  \u1074 \u1079 \u1072 \u1080 \u1084 \u1086 \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1080 \u1103  \u1084 \u1077 \u1078 \u1076 \u1091  \u1089 \u1077 \u1090 \u1077 \u1074 \u1099 \u1084 \u1080  \u1091 \u1079 \u1083 \u1099 \u1084 \u1080 , \u1075 \u1076 \u1077 \
+	- \uc0\u1040 \u1082 \u1090 \u1080 \u1074 \u1085 \u1072 \u1103  \u1089 \u1090 \u1086 \u1088 \u1086 \u1085 \u1072  (\u1088 \u1086 \u1083 \u1100  - \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072 ) - \u1074 \u1099 \u1087 \u1086 \u1083 \u1085 \u1103 \u1077 \u1090  \u1079 \u1072 \u1087 \u1088 \u1086 \u1089 \u1099 \
+	- \uc0\u1055 \u1072 \u1089 \u1089 \u1080 \u1074 \u1085 \u1072 \u1103  \u1089 \u1090 \u1086 \u1088 \u1086 \u1085 \u1072  (\u1088 \u1086 \u1083 \u1100  - \u1089 \u1077 \u1088 \u1074 \u1077 \u1088 ) - \u1087 \u1088 \u1080 \u1085 \u1080 \u1084 \u1072 \u1077 \u1090  /  \u1086 \u1073 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1077 \u1090  \u1079 \u1072 \u1087 \u1088 \u1086 \u1089 \u1099 \
+	\
+\
+\uc0\u1058 \u1072 \u1082 \u1078 \u1077  \u1089 \u1077 \u1088 \u1074 \u1077 \u1088 \u1086 \u1084  \u1085 \u1072 \u1079 \u1099 \u1074 \u1072 \u1077 \u1090  \u1074 \u1099 \u1089 \u1086 \u1082 \u1086 \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 . \u1082 \u1086 \u1084 \u1087 \u1100 \u1102 \u1090 \u1077 \u1088 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081 , \u1082 \u1072 \u1082  \u1087 \u1088 \u1072 \u1074 \u1080 \u1083 \u1086 , \u1085 \u1072 \u1093 \u1086 \u1076 \u1080 \u1090 \u1089 \u1103  \u1074  \u1076 \u1072 \u1090 \u1072  \u1094 \u1077 \u1085 \u1090 \u1088 \u1072 \u1093 \
+\
+______________________________________________________________________________________\
+\
+\
+\uc0\u1050 \u1072 \u1082 \u1086 \u1081  \u1092 \u1086 \u1088 \u1084 \u1072 \u1090  \u1076 \u1072 \u1085 \u1085 \u1099 \u1093  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1077 \u1090 \u1089 \u1103  \u1074  MongoDB?\
+\
+	Binary JSON (BSON)\
+\
+\uc0\u1044 \u1040 \u1053 \u1053 \u1067 \u1045  (\u1055 \u1054  \u1058 \u1048 \u1055 \u1059 )\
+\
+	(1) \uc0\u1058 \u1077 \u1082 \u1089 \u1090 \u1086 \u1074 \u1099 \u1077  (html/css/js)\
+	(2) \uc0\u1041 \u1080 \u1085 \u1072 \u1088 \u1085 \u1099 \u1077 \
+		- \uc0\u1080 \u1079 \u1086 \u1073 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1103 \
+		- \uc0\u1084 \u1077 \u1076 \u1080 \u1072 \
+		- \uc0\u1080 \u1089 \u1087 \u1086 \u1083 \u1085 \u1103 \u1077 \u1084 \u1099 \u1077  \u1092 \u1072 \u1081 \u1083 \u1099  ("\u1073 \u1080 \u1085 \u1072 \u1088 \u1085 \u1080 \u1082 \u1080 ")\
+\
+\
+______________________________________________________________________________________\
+\
+\
+\uc0\u1057 \u1077 \u1088 \u1074 \u1077 \u1088 \
+	- \uc0\u1082 \u1086 \u1084 \u1087 \u1100 \u1102 \u1090 \u1077 \u1088 \
+	- \uc0\u1087 \u1088 \u1080 \u1082 \u1083 \u1072 \u1076 \u1085 \u1086 \u1077  \u1055 \u1054  (MongoDB)\
+	- \uc0\u1088 \u1086 \u1083 \u1100  (\u1050 \u1051 \u1048 \u1045 \u1053 \u1058 -\u1057 \u1045 \u1056 \u1042 \u1045 \u1056  \u1040 \u1056 \u1061 .)\
+\
+______________________________________________________________________________________\
+\
+\
+\uc0\u1050 \u1072 \u1082  \u1103  \u1084 \u1086 \u1075 \u1091  \u1087 \u1086 \u1076 \u1082 \u1083 \u1102 \u1095 \u1080 \u1090 \u1100 \u1089 \u1103  \u1082  MONGODB?\
+\
+	(1) \uc0\u1043 \u1088 \u1072 \u1092 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080 \u1077 /\u1082 \u1086 \u1085 \u1089 \u1086 \u1083 \u1100 \u1085 \u1099 \u1077  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1099 \
+	(2) \uc0\u1055 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1085 \u1099 \u1081  \u1082 \u1086 \u1076 \
+\
+\
+______________________________________________________________________________________\
+\
+\
+// $push - \uc0\u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1082  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \u1091 \
+// $addToSet - \uc0\u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1082  \u1084 \u1085 \u1086 \u1078 \u1077 \u1089 \u1090 \u1074 \u1091 \
+// $pull - \uc0\u1091 \u1076 \u1072 \u1083 \u1080 \u1090 \u1100  1 \u1101 \u1083 . \u1080 \u1079  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \u1072 \
+// $pullAll - \uc0\u1091 \u1076 \u1072 \u1083 \u1080 \u1090 \u1100  \u1085 \u1077 \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1101 \u1083 . \u1080 \u1079  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \u1072 \
+\
+______________________________________________________________________________________\
+\
+\
+// CREATE\
+// insertOne\
+// insertMany\
+\
+// READ\
+// findOne\
+// find\
+\
+// UPDATE\
+// updateOne\
+// updateMany\
+\
+\
+// DELETE\
+// deleteOne\
+// deleteMany\
+\
+______________________________________________________________________________________\
+\
+\
+\
+CREATE TABLE Clients (\
+     id         NUMERIC(4) NOT NULL,\
+     name       VARCHAR(30) NOT NULL,\
+     phone      NUMERIC(20) NOT NULL\
+     );\
+\
+\
+CREATE TABLE Customers (\
+     id         NUMERIC(4) NOT NULL UNIQUE,\
+     name       VARCHAR(30) NOT NULL,\
+     phone      NUMERIC(20) NOT NULL\
+     );\
+\
+INSERT INTO Customers (\
+  id,\
+  name,\
+  phone\
+  ) VALUES (\
+    01,\
+    'Mariam Lofink',\
+    0175786950849\
+    );\
+\
+INSERT INTO Customers (\
+  id,\
+  name,\
+  phone\
+  ) VALUES (\
+    02,\
+    'Alex Lofink',\
+    0175788493856\
+    );\
+\
+\
+SELECT COUNT(*) AS total\
+FROM Customers\
+\
+SELECT AVG(Price) AS avg_price,\
+       MIN(Price) AS min_price,\
+       MAX(Price) AS max_price\
+FROM Products\
+\
+SELECT ProductID,\
+       Price AS Price_euro,\
+       Price*138 AS Price_JPY\
+FROM Products\
+\
+SELECT SUM(Price) AS Total\
+FROM Products\
+\
+SELECT Country,\
+COUNT(*) AS TotalClients \
+FROM Customers\
+GROUP BY Country\
+ORDER BY TotalClients DESC;\
+\
+SELECT Country FROM Customers\
+UNION\
+SELECT Country FROM Suppliers\
+ORDER BY Country;\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+DELETE FROM Customers\
+WHERE CustomerName = 'Wilman Kala'\
+\
+SELECT \
+t1.OrderID,\
+t2.CustomerName,\
+t2.Country\
+FROM Orders t1\
+LEFT JOIN Customers t2\
+ON t1.CustomerID = t2.CustomerID\
+WHERE OrderID=10248\
+\
+SELECT \
+t1.OrderID,\
+t2.CustomerName,\
+t2.Country\
+FROM Orders t1\
+LEFT JOIN Customers t2\
+ON t1.CustomerID = t2.CustomerID\
+\
+ORDER BY Country\
+\
+SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));\
+\
+\
+select\
+	first_name,\
+    	last_name,\
+    	max(age)\
+from Customers;\
+\
+\
+select count(*) as orders_amount\
+from Orders;\
+\
+select\
+	avg(amount) as avg_amount\
+from Orders;\
+\
+select\
+	item,\
+	sum(amount) as sum_amount\
+from Orders\
+group by item;\
+\
+select\
+	Country,\
+    avg(age) as avg_age\
+from Customers\
+where Country = 'UK';\
+\
+select\
+	Country,\
+    avg(age) as avg_age\
+from Customers\
+where country in ('USA', 'UK')\
+group by country;\
+\
+\
+select\
+	Country,\
+    avg(age) as avg_age\
+from Customers\
+group by country\
+having country in ('USA', 'UK');\
+\
+select\
+country,\
+avg(age) as avg_age\
+from customers\
+group by country\
+having avg(age) >= 25;\
+\
+SELECT \
+t1.first_name,\
+t1.last_name,\
+t2.avg_amount\
+FROM Customers t1\
+INNER JOIN (\
+  select\
+  customer_id,\
+avg(amount) as avg_amount\
+  from orders\
+  group by customer_id\
+  having avg_amount >= 400\
+  ) t2\
+ON t1.customer_id = t2.customer_id;\
+\
+\
+/*SELECT \
+t1.first_name,\
+t1.last_name,\
+t2.avg_amount\
+FROM Customers t1\
+INNER JOIN (\
+  select\
+  customer_id,\
+avg(amount) as avg_amount\
+  from orders\
+  group by customer_id\
+  having avg_amount >= 400\
+  ) t2\
+ON t1.customer_id = t2.customer_id;*/\
+\
+\
+-- \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1089 \u1088 \u1077 \u1076 \u1085 \u1080 \u1081  amount \u1091  \u1082 \u1072 \u1078 \u1076 \u1086 \u1075 \u1086  \u1087 \u1086 \u1082 \u1091 \u1087 \u1072 \u1090 \u1077 \u1083 \u1103 \
+\
+-- \uc0\u1085 \u1072 \u1081 \u1090 \u1080  \u1089 \u1088 \u1077 \u1076 \u1085 \u1080 \u1081  amount \u1087 \u1086  customer_id\
+-- \uc0\u1089 \u1076 \u1077 \u1083 \u1072 \u1090 \u1100  join \u1089  customers \u1087 \u1086  customer_id\
+\
+\
+SELECT \
+t2.first_name,\
+t2.last_name,\
+t1.avg_amount\
+FROM (\
+  select\
+  customer_id,\
+  avg(amount) as avg_amount\
+  from orders\
+  group by customer_id\
+  ) t1\
+INNER JOIN Customers t2\
+ON t1.customer_id = t2.customer_id;\
+\
+select\
+  avg(amount) as avg_amount\
+  from orders\
+  group by customer_id\
+\
+SELECT\
+  CustomerID,\
+  Count(OrderID) AS Total_Orders\
+  FROM Orders\
+  GROUP BY CustomerID\
+ORDER BY Total_Orders DESC\
+\
+\
+\
+SELECT\
+  EmployeeID,\
+  Count(OrderID) AS Total_Orders\
+  FROM Orders\
+  GROUP BY EmployeeID\
+ORDER BY Total_Orders DESC\
+LIMIT 3
+\f0\fs24 \cb1 \kerning1\expnd0\expndtw0 \
+\
+\
+
+\f1\fs28 \cb2 \expnd0\expndtw0\kerning0
+SELECT\
+  Country,\
+  Count(CustomerID) AS Total_Customers\
+  FROM Customers\
+  GROUP BY Country\
+ORDER BY Total_Customers ASC\
+LIMIT 3\
+\
+SELECT\
+  Country,\
+  Count(CustomerID) AS Total_Customers\
+  FROM Customers\
+  GROUP BY Country\
+HAVING Count(CustomerID) >= 7\
+ORDER BY Total_Customers DESC\
+\
+SELECT\
+   count(\
+     case\
+        when customer_id > 3 then 1\
+     else null\
+     end\
+) as cnt\
+FROM Customers;\
+\
+SELECT\
+   sum(\
+     case\
+        when age >= 25 then age\
+     else 0\
+     end\
+) as sum\
+FROM Customers;\
+\
+SELECT\
+   sum(\
+     case\
+        when amount <= 400\
+            then amount\
+          else 0\
+     end\
+) as sum_amount\
+FROM Orders;\
+\
+SELECT\
+   avg(\
+     case\
+        when amount >= 400\
+            then amount\
+          else null\
+     end\
+) as avg_amount\
+FROM Orders;\
+\
+SELECT ProductName, Price\
+FROM Products\
+WHERE Price > 100;\
+\
+-- \uc0\u1077 \u1089 \u1083 \u1080  \u1089 \u1090 \u1086 \u1080 \u1084 \u1086 \u1089 \u1090 \u1100  \u1090 \u1086 \u1074 \u1072 \u1088 \u1072  \u1086 \u1090  100 (EURO) \u1090 \u1086  - "\u1076 \u1086 \u1088 \u1086 \u1075 \u1086 \u1089 \u1090 \u1086 \u1102 \u1097 \u1080 \u1081 "\
+-- \uc0\u1074  \u1087 \u1088 \u1086 \u1090 \u1080 \u1074 \u1085 \u1086 \u1084  \u1089 \u1083 \u1091 \u1095 \u1072 \u1077  "\u1089  \u1085 \u1080 \u1079 \u1082 \u1086 \u1081  \u1094 \u1077 \u1085 \u1086 \u1081 "\
+-- \uc0\u1054 \u1058 \u1042 \u1045 \u1058 : \u1053 \u1072 \u1079 \u1074 \u1072 \u1085 \u1080 \u1077 , \u1062 \u1077 \u1085 \u1072 , CategoryName\
+\
+\
+\
+SELECT \
+ProductName, Price,\
+CASE\
+        WHEN PRICE >= 100 THEN 'Expensive'\
+        WHEN PRICE <= 10 THEN 'Very cheap'    \
+        ELSE 'Cheap'\
+        END AS CategoryName\
+FROM Products;\
+\
+\
+SELECT \
+ProductID, OrderID, Quantity,\
+CASE\
+        WHEN Quantity BETWEEN 1 AND 2 THEN 'Small order'\
+        WHEN Quantity BETWEEN 3 AND 4 THEN 'Average order'   \
+        ELSE 'Big order'\
+        END AS QuantityGrade\
+FROM OrderDetails;\
+\
+SELECT \
+CustomerName, City, Country\
+FROM Customers\
+ORDER BY City;\
+\
+UPDATE Customers\
+SET City = NULL;\
+\
+SELECT\
+SUM(price)\
+FROM Products\
+WHERE Price >= 100;\
+\
+SELECT\
+   SUM(price)\
+     case\
+        when price >= 100\
+            then price\
+          else 0\
+     end\
+) as sum_exp\
+FROM Products;\
+\
+\
+_______________________________________________________________\
+\
+\
+SELECT\
+model,\
+ram,\
+screen\
+FROM\
+Laptop\
+WHERE\
+Price > 1000;\
+\
+\
+SELECT *\
+FROM Printer\
+WHERE Color = \'82y\'91;\
+\
+SELECT\
+model,\
+speed,\
+hd\
+FROM PC\
+WHERE cd in ('12x', '24x')\
+AND\
+Price < 600;\
+\ul \
+\ulnone SELECT DISTINCT\
+t2.maker,\
+t1.speed\
+FROM Laptop t1\
+INNER JOIN Product t2\
+ON t1.model = t2.model\
+WHERE t1.hd >= 10;\
+\ul \
+\
+\ulnone SELECT\
+t1.maker\
+FROM (\
+SELECT DISTINCT\
+maker\
+FROM Product\
+WHERE type = 'PC\'91\
+) t1\
+LEFT JOIN (\
+SELECT DISTINCT\
+maker\
+FROM Product\
+WHERE type = \'82Laptop\'91\
+) t2\
+ON t1.maker = t2.maker\
+WHERE t2.maker IS NULL\ul \ulc0 ;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \ulnone SELECT DISTINCT\
+t1.maker\
+FROM Product t1\
+INNER JOIN PC t2\
+ON t1.model = t2.model\
+WHERE t2.speed >= 450\ul ;\
+\
+\ulnone SELECT\
+model, price\
+FROM Printer\
+WHERE Price = (SELECT MAX(Price) FROM Printer)\ul ;\
+\
+\ulnone SELECT AVG(speed) AS avg_speed\
+FROM PC;\ul \
+\
+\
+\ulnone SELECT first_name FROM Customers\
+UNION ALL\
+SELECT item FROM Orders;\
+\
+SELECT first_name FROM Customers\
+UNION \
+SELECT item FROM Orders;\
+\
+SELECT id, title, null as price, quantity FROM Goods\
+UNION ALL\
+SELECT id, title, quantity, price FROM Goods_1;\ul \
+\
+\
+\ulnone select\
+cast(age as integer) as customer_age\
+from customers\
+union all\
+select order_id from orders;\
+\
+SELECT \
+t2.model,\
+t2.price\
+from Product t1\
+inner join (\
+SELECT model, price from PC\
+UNION\
+SELECT model, price from Laptop\
+UNION\
+SELECT model, price from Printer\
+) t2\
+on t1.model = t2.model\
+where t1.maker = 'B'\
+\
+(12)\
+SELECT AVG(speed) AS avg_speed\
+FROM Laptop\
+WHERE Price > 1000\ul \
+\ulnone \
+(13)\
+SELECT avg(speed) AS Avg_speed\
+from PC t1\
+inner join Product t2\
+on t1.model = t2.model\
+where t2.maker = 'A'\
+\
+(14)\ul \
+\ulnone Select t1.class,\
+       t1.name,\
+       t2.country\
+from Ships t1\
+inner join Classes t2\
+on t1.class = t2.class\
+where t2.numGuns >= 10\
+\
+(15)\
+Select hd\
+from PC\
+group by hd\
+having count(*) > 1\
+\
+(16)\
+select distinct\
+        t1.model,\
+        t2.model,\
+        t2.speed,\
+        t2.ram\
+from PC t1\
+inner join PC t2\
+on t1.ram = t2.ram\
+and t1.speed = t2.speed\
+and t1.model > t2.model\
+\
+(17)\
+select distinct\
+      'Laptop' as type,\
+      model,\
+      speed\
+from Laptop\
+where speed < (select min(speed) from PC)\
+\
+(18)\
+select distinct\
+      t2.maker,\
+      t1.price\
+from Printer t1\
+inner join Product t2\
+on t1.model = t2.model\
+where color = 'y'\
+and price = (\
+        select\
+             min(price)\
+        from Printer\
+        where color = 'y'\
+)\
+\
+(19)\
+select\
+      t2.maker,\
+      avg(screen)\
+from Laptop t1\
+inner join Product t2\
+on t1.model = t2.model\
+group by t2.maker\
+\
+(20)\
+select\
+      maker,\
+      count(*) as model_cnt\
+from Product\
+where type = 'PC'\
+group by maker\
+having count(*) >= 3\
+\
+(21)\
+Select\
+     t2.maker,\
+     max(t1.price) as MAX_price\
+from PC t1\
+inner join Product t2\
+on t1.model = t2.model\
+group by t2.maker\
+\
+(22)\
+Select\
+     speed,\
+     avg(price) as AVG_price\
+from PC\
+where speed > 600\
+group by speed\
+\
+(23)\
+Select distinct\
+       t2.maker\
+from PC t1\
+inner join Product t2\
+on t1.model = t2.model\
+and t1.speed >= 750\
+inner join(\
+\
+select\
+      t2.maker\
+from Laptop t1\
+inner join Product t2\
+on t1.model = t2.model\
+where speed >= 750\
+) t3\
+on t2.maker = t3.maker\
+\
+(24)\
+select\
+      model\
+from (\
+      select price, model from Laptop\
+      union \
+      select price, model from PC\
+      union\
+      select price, model from Printer\
+) t2\
+where price = (\
+      Select\
+            max(price) as MAX_price\
+      from (\
+            select price from Laptop\
+            union \
+            select price from PC\
+            union\
+            select price from Printer\
+      ) t1\
+)\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf3 \cb4 \ul MongoDB\cf0 \cb2 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf2 \cb4 db.users.find(\{\
+  name: \{$in: ['Anatoly', 'Dmitry', 'Olga', 'Semen']\}\
+  \})\cf5 \cb6 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf0 \cb2 \
+db.users.updateOne(\{name: "\uc0\u1053 \u1080 \u1082 \u1080 \u1090 \u1072 "\}, \
+        \{$set: \{ id: 3 \} \})\ul \
+\ulnone \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf5 \cb6 db.users.deleteMany(\{ \
+  age: \{$lte:  28\} \
+\})\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf0 \cb2 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf5 \cb6 db.facebook.find( \{$and: [\
+  \{age: \{$gte: 30\}\},\
+  \{age: \{$lte:  40\}\}\
+  ]\} )\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf0 \cb2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 db
+\f2\b0 .
+\f3\b eventlog
+\f2\b0 .
+\f3\b find\cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 'weight_kg'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$gte'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 6
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+        \cf8 'type'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'washing'\cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b eventlog
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$match'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 'weight_kg'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$gte'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 6
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+        \cf8 'type'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'washing'\cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+\
+
+\f3\b \cf7 ])\
+\
+\cf0 db
+\f2\b0 .
+\f3\b eventlog
+\f2\b0 .
+\f3\b find\cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 'weight_kg'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$gte'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 6
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+        \cf8 'type'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'washing'\cf0 \
+    
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 'machine_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+        \cf8 'mode'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+        \cf8 '_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 0\cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+lt - <\
+lte - <=\
+gt - >\
+gte - >=\
+eq - =\
+ne - !=\
+\
+
+\f2\b0 \cf0 db.videos.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$set'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'is_approved'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 true\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+
+\f2\b0 \cf0 db.videos.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$unset'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'is_approved'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 null
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+            \cf8 'category_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 null\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+
+\f2\b0 \cf0 db.videos.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 'id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'm4kd91jdjfi'\cf0 \
+    
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$inc'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{ // uvelichenie
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 200\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )
+\f1\b0\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\
+\
+\
+
+\f2\fs24 \cb1 \kerning1\expnd0\expndtw0 db.videos.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$mul'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0  \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  .\cf9 9\cf0 \
+            
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+            \cf8 '$set'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+                \cf8 'is_approved'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 true\cf0 \
+            
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+            \cf8 '$unset'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+                \cf8 'is_banned'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 null\cf0 \
+                
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    \
+
+\f3\b \cf7 )\
+\
+\
+\cf0 db
+\f2\b0 .\cf8 products\cf0 .
+\f3\b find\cf7 (\{
+\f2\b0 \cf0 \
+    \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'home'\cf0 \
+
+\f3\b \cf7 \});\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b find\cf7 (\{
+\f2\b0 \cf0 \
+    \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$ne'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'home'
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \});\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b find\cf7 (\{
+\f2\b0 \cf0 \
+    \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 $in
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 [
+\f2\b0 \cf8 'home'
+\f3\b \cf7 ,
+\f2\b0 \cf0  \cf8 'computers'
+\f3\b \cf7 ]\}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \});\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b find\cf7 (\{
+\f2\b0 \cf0 \
+    \cf8 '$and'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 [
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'home'
+\f3\b \cf7 \},
+\f2\b0 \cf0  \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'computers'
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 ]
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \});\
+\
+\cf0 db
+\f2\b0 .
+\f3\b orders
+\f2\b0 .
+\f3\b find\cf7 (\{
+\f2\b0 \cf0 \
+    \cf8 'is_paid'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$exists'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 false
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \});\
+\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$gte'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 5000
+\f3\b \cf7 \}\},
+\f2\b0 \cf0 \
+    \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+ \
+        \cf8 '$addToSet'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'premium'\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$lt'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 0
+\f3\b \cf7 \}\},
+\f2\b0 \cf0 \
+    \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+ \
+        \cf8 '$mul'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  -\cf9 1\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$push'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'electronics'\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$addToSet'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$each: ['\cf0 electronics\cf8 ', '\cf0 pc\cf8 ']\}\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$pull'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'category'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 'electronics'\cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$inc'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+      \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 10\cf0  * -\cf9 1. //umenshit na 10 euro\cf0 \
+      
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+  
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$mul'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+      \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  .\cf9 9. // umenshit na 10%\cf0 \
+      
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+  
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+
+\f2\b0 \cf0 db.products.updateMany
+\f3\b \cf7 (
+\f2\b0 \cf0 \
+
+\f3\b \cf7 \{\},
+\f2\b0 \cf0 \
+  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$mul'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+      \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1\cf0 .\cf9 1.  // uvelichit na 10%\cf0 \
+      
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+  
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 )\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$group'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 '_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 null
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+            \cf8 'total_quantity'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$sum'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 '$quantity'
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ])\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$sort'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  -\cf9 1
+\f3\b \cf7 , // 3 samyh dorogih tovara
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$limit'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 3\cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ])\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$sort'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 ,  // 3 samyh deshevyh
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$limit'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 3\cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ])\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$sort'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$skip'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 2 // propuskaet 2 posicii\cf0 \
+    
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$limit'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 4\cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ])\
+\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$project'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'title'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+            \cf8 '_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 0\cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ])\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$match'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$gte'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 2000
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+            
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+        \
+        
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \
+        \cf8 '$sort'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 'price'
+\f3\b \cf7 :
+\f2\b0 \cf0  -\cf9 1\cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+   \
+
+\f3\b \cf7 ])\
+\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$group'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+            \cf8 '_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 null
+\f3\b \cf7 ,
+\f2\b0 \cf0  \
+            \cf8 'min_price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$min'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 '$price'
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+            \cf8 'max_price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$max'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 '$price'
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+            \cf8 'avg_price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$avg'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 '$price'
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+            \cf8 'products_count'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$sum'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 1
+\f3\b \cf7 \},
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+   \
+
+\f3\b \cf7 ])\
+\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$group'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '_id'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 null
+\f3\b \cf7 ,
+\f2\b0 \cf0 \
+        \cf8 'avg_price'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 '$avg'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf8 '$price'
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+        
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ]);\
+\
+\cf0 db
+\f2\b0 .
+\f3\b products
+\f2\b0 .
+\f3\b aggregate\cf7 ([
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \{
+\f2\b0 \cf0 \
+        \cf8 '$sample'
+\f3\b \cf7 :
+\f2\b0 \cf0  
+\f3\b \cf7 \{
+\f2\b0 \cf8 'size'
+\f3\b \cf7 :
+\f2\b0 \cf0  \cf9 3
+\f3\b \cf7 \} //$sample - \uc0\u1074 \u1099 \u1073 \u1086 \u1088 \u1082 \u1072  \u1089 \u1083 \u1091 \u1095 \u1072 \u1081 \u1085 \u1099 \u1093  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1086 \u1074 
+\f2\b0 \cf0 \
+    
+\f3\b \cf7 \}
+\f2\b0 \cf0 \
+
+\f3\b \cf7 ])\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs26 \cf10 \cb2 \expnd0\expndtw0\kerning0
+// \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1041 \u1044  Store \u1080  \u1089 \u1076 \u1077 \u1083 \u1072 \u1090 \u1100  \u1077 \u1077  \u1041 \u1044  \u1087 \u1086  \u1091 \u1084 \u1086 \u1083 \u1095 \u1072 \u1085 \u1080 \u1102 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 use Store\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1074  \u1041 \u1044  store \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  products\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.createCollection(\cf12 'products'\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1047 \u1072 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1100  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  products 10 \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1072 \u1084 \u1080  (id, title, price, count)\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.insertMany([])\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1055 \u1088 \u1086 \u1074 \u1077 \u1088 \u1080 \u1090 \u1100  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1080 \u1084 \u1086 \u1077  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1080 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.find()\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 [\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 1\cf11 ,\cb1 \
+\cb2     title: \cf12 'Apple'\cf11 ,\cb1 \
+\cb2     price: \cf13 3000\cf11 ,\cb1 \
+\cb2     count: \cf13 10\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 2\cf11 ,\cb1 \
+\cb2     title: \cf12 'Tomato'\cf11 ,\cb1 \
+\cb2     price: \cf13 6000\cf11 ,\cb1 \
+\cb2     count: \cf13 15\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 3\cf11 ,\cb1 \
+\cb2     title: \cf12 'Pineapple'\cf11 ,\cb1 \
+\cb2     price: \cf13 13000\cf11 ,\cb1 \
+\cb2     count: \cf13 7\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 4\cf11 ,\cb1 \
+\cb2     title: \cf12 'Lemon'\cf11 ,\cb1 \
+\cb2     price: \cf13 23000\cf11 ,\cb1 \
+\cb2     count: \cf13 25\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 5\cf11 ,\cb1 \
+\cb2     title: \cf12 'Lime'\cf11 ,\cb1 \
+\cb2     price: \cf13 7500\cf11 ,\cb1 \
+\cb2     count: \cf13 12\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 6\cf11 ,\cb1 \
+\cb2     title: \cf12 'Grapes'\cf11 ,\cb1 \
+\cb2     price: \cf13 17300\cf11 ,\cb1 \
+\cb2     count: \cf13 9\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 7\cf11 ,\cb1 \
+\cb2     title: \cf12 'Orange'\cf11 ,\cb1 \
+\cb2     price: \cf13 30000\cf11 ,\cb1 \
+\cb2     count: \cf13 3\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 8\cf11 ,\cb1 \
+\cb2     title: \cf12 'Banana'\cf11 ,\cb1 \
+\cb2     price: \cf13 9000\cf11 ,\cb1 \
+\cb2     count: \cf13 27\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 9\cf11 ,\cb1 \
+\cb2     title: \cf12 'Green'\cf11 ,\cb1 \
+\cb2     price: \cf13 1500\cf11 ,\cb1 \
+\cb2     count: \cf13 17\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 10\cf11 ,\cb1 \
+\cb2     title: \cf12 'Kiwi'\cf11 ,\cb1 \
+\cb2     price: \cf13 3800\cf11 ,\cb1 \
+\cb2     count: \cf13 11\cf11 \cb1 \
+\cb2   \}\cb1 \
+\cb2 ]\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1090 \u1086 \u1074 \u1072 \u1088 \u1099 , \u1082 \u1086 \u1083 \u1083 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1084 \u1077 \u1085 \u1100 \u1096 \u1077  10\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.find(\cb1 \
+\cb2   \{count: \{$lt: \cf13 10\cf11 \}\}\cb1 \
+\cb2   )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1090 \u1086 \u1074 \u1072 \u1088 \u1099 , \u1082 \u1086 \u1083 \u1083 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1073 \u1086 \u1083 \u1100 \u1096 \u1077  10 \u1080  \u1084 \u1077 \u1085 \u1100 \u1096 \u1077  20 \u1080  \u1094 \u1077 \u1085 \u1072  \u1073 \u1086 \u1083 \u1100 \u1096 \u1077  10000\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.find(\{\cb1 \
+\cb2     count: \{$lte: \cf13 20\cf11 , $gte: \cf13 10\cf11 \},\cb1 \
+\cb2     price: \{$gt: \cf13 10000\cf11 \}\cb1 \
+\cb2 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1090 \u1086 \u1074 \u1072 \u1088 \u1099  \u1089  \u1072 \u1081 \u1076 \u1080  2, 5, 8\cf11 \cb1 \
+\cb2 db.products.find(\{\cb1 \
+\cb2   id: \{$in: [\cf13 2\cf11 , \cf13 5\cf11 , \cf13 8\cf11 ]\}\cb1 \
+\cb2 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // updateOne / updateMany\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088  \u1080 \u1079 \u1084 \u1077 \u1085 \u1077 \u1085 \u1080 \u1103  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1103 \cf11 \cb1 \
+\cb2 db.products.updateOne(\cb1 \
+\cb2   \{id: \cf13 2\cf11 \}, \cf10 // \uc0\u1091 \u1089 \u1083 \u1086 \u1074 \u1080 \u1077  \u1087 \u1086 \u1080 \u1089 \u1082 \u1072 \cf11 \cb1 \
+\cb2   \{$set: \{title: \cf12 'Tomatos'\cf11 \}\} \cf10 // \uc0\u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1080 \u1077 \cf11 \cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 //\uc0\u1044 \u1083 \u1103  \u1074 \u1089 \u1077 \u1093  \u1087 \u1088 \u1086 \u1076 \u1091 \u1082 \u1090 \u1086 \u1074  \u1089  \u1094 \u1077 \u1085 \u1086 \u1081  \u1084 \u1077 \u1085 \u1100  \u1080 \u1083 \u1080  \u1088 \u1072 \u1074 \u1085 \u1086  20000 \u1079 \u1072 \u1076 \u1072 \u1090 \u1100  count 15\cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{price: \{$lte: \cf13 20000\cf11 \}\},\cb1 \
+\cb2   \{$set: \{count: \cf13 15\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1089 \u1090 \u1088 \u1072 \u1085 \u1091  \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 \u1086 \u1076 \u1089 \u1090 \u1074 \u1072 \cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$set: \{country: \cf12 'Germany'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 //\uc0\u1055 \u1077 \u1088 \u1077 \u1080 \u1084 \u1077 \u1085 \u1086 \u1074 \u1072 \u1090 \u1100  \u1089 \u1090 \u1088 \u1072 \u1085 \u1091  \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 \u1086 \u1076 \u1089 \u1090 \u1074 \u1072  \u1074  origin_country\cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$rename: \{\cf12 'country'\cf11 : \cf12 'origin_country'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1059 \u1076 \u1072 \u1083 \u1080 \u1090 \u1100  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  origin_country\cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$unset: \{origin_country: \cf12 ''\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 //\uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1077  \u1086 \u1076 \u1085 \u1086 \u1075 \u1086  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1103 /\u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1072  \u1074  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$push: \{country: \cf12 'Spain'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1077  \u1085 \u1077 \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1080 \u1093  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1086 \u1074  \u1074  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateOne(\cb1 \
+\cb2   \{id: \cf13 3\cf11 \},\cb1 \
+\cb2   \{$push: \{country: \{$each: [\cf12 'Germany'\cf11 , \cf12 'France'\cf11 ]\}\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1055 \u1056 \u1040 \u1050 \u1058 \u1048 \u1063 \u1045 \u1057 \u1050 \u1048 \u1045  \u1047 \u1040 \u1044 \u1040 \u1063 \u1050 \u1048 \cf11 \cb1 \
+\cf10 \cb2 // \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1074 \u1089 \u1077 \u1084  \u1086 \u1073 \u1098 \u1077 \u1082 \u1090 \u1072 \u1084  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  city \u1089  \u1087 \u1091 \u1089 \u1090 \u1099 \u1084  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \u1086 \u1084 .\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$set: \{city: []\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1042  \u1086 \u1073 \u1098 \u1077 \u1082 \u1090 \u1099  \u1089  \u1072 \u1081 \u1076 \u1080  2, 8, 10 \u1074  city \u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  Paris\cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{id: \{$in: [\cf13 2\cf11 , \cf13 8\cf11 , \cf13 10\cf11 ]\}\},\cb1 \
+\cb2   \{$push: \{city: \cf12 'Paris'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1042  \u1086 \u1073 \u1098 \u1077 \u1082 \u1090 \u1099  \u1089  \u1072 \u1081 \u1076 \u1080  5, 7, 9 \u1074  city \u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  Madrid, Berlin, Milan\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{id: \{$in: [\cf13 5\cf11 , \cf13 7\cf11 , \cf13 9\cf11 ]\}\},\cb1 \
+\cb2   \{$push: \{city: \{$each: [\cf12 'Madrid'\cf11 , \cf12 'Berlin'\cf11 , \cf12 'Milan'\cf11 ]\}\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 //\uc0\u1059  \u1074 \u1089 \u1077 \u1093  \u1086 \u1073 \u1098 \u1077 \u1082 \u1090 \u1086 \u1074  \u1089  count 15 \u1079 \u1072 \u1076 \u1072 \u1090 \u1100  count 10\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{count: \cf13 15\cf11 \},\cb1 \
+\cb2   \{$set: \{count: \cf13 10\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1059  \u1074 \u1089 \u1077 \u1093  \u1090 \u1086 \u1074 \u1072 \u1088 \u1086 \u1074  \u1089  \u1094 \u1077 \u1085 \u1086 \u1081  \u1074  \u1076 \u1080 \u1072 \u1087 \u1072 \u1079 \u1086 \u1085 \u1077  7000 \u1080  15000 \u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1074  country Brasilia, Argentina\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{price: \{$lte: \cf13 15000\cf11 , $gte: \cf13 7000\cf11 \}\},\cb1 \
+\cb2   \{$push: \{country: \{$each: [\cf12 'Brasilia'\cf11 , \cf12 'Argentina'\cf11 ]\}\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1059  \u1074 \u1089 \u1077 \u1093  \u1090 \u1086 \u1074 \u1072 \u1088 \u1086 \u1074  \u1076 \u1086 \u1088 \u1086 \u1078 \u1077  20000 \u1091 \u1076 \u1072 \u1083 \u1080 \u1090 \u1100  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  city\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{price: \{$gte: \cf13 20000\cf11 \}\},\cb1 \
+\cb2   \{$unset: \{city: \cf12 ''\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1059  \u1090 \u1086 \u1074 \u1072 \u1088 \u1072  \u1089  \u1072 \u1081 \u1076 \u1080  10 \u1091 \u1074 \u1077 \u1083 \u1080 \u1095 \u1080 \u1090 \u1100  \u1094 \u1077 \u1085 \u1091  \u1085 \u1072  1000\cf11 \cb1 \
+\cb2 db.products.updateOne(\cb1 \
+\cb2   \{id: \cf13 10\cf11 \},\cb1 \
+\cb2   \{$inc: \{price: \cf13 1000\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1059  \u1090 \u1086 \u1074 \u1072 \u1088 \u1086 \u1074  \u1076 \u1077 \u1096 \u1077 \u1074 \u1083 \u1077  15000 \u1091 \u1074 \u1077 \u1083 \u1080 \u1095 \u1080 \u1090 \u1100  count \u1085 \u1072  5\cf11 \cb1 \
+\cb2 db.products.updateMany(\cb1 \
+\cb2   \{price: \{$lt: \cf13 15000\cf11 \}\},\cb1 \
+\cb2   \{$inc: \{count: \cf13 5\cf11 \}\}\cb1 \
+\cb2 )\
+\
+\cf10 /* \cf11 \cb1 \
+\cf10 \cb2 1. \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  profiles\cf11 \cb1 \
+\cf10 \cb2 2. \uc0\u1047 \u1072 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1100  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  7 \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1072 \u1084 \u1080  \u1089  \u1087 \u1088 \u1086 \u1092 \u1072 \u1081 \u1083 \u1072 \u1084 \u1080  \u1089 \u1086  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1072 \u1084 \u1080  (id, firstname, lastname, age, gender, position, salary, country, city). \u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1081 \u1090 \u1077  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1077  \u1076 \u1072 \u1085 \u1085 \u1099 \u1077 :\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 1 Ivan Petrov, 28, male, Product manager, 5000, Germany, Berlin\cf11 \cb1 \
+\cf10 \cb2 2 Svetlana Ivanova, 38, female, Designer, 3000, Germany, Bremen\cf11 \cb1 \
+\cf10 \cb2 3 Olga Sidorova, 22, female, PR manager, 4500, Germany, Dresden\cf11 \cb1 \
+\cf10 \cb2 4 Petr Orlov, 27, male, Web-developer, 5500, Italy, Milan\cf11 \cb1 \
+\cf10 \cb2 5  Alina Ushanova, 43,  female, Senior Web-developer, 6500, France, Paris\cf11 \cb1 \
+\cf10 \cb2 6 Oleg Polin, 39, male, CEO, 7600, France, Lyon\cf11 \cb1 \
+\cf10 \cb2 7 Mark Demidov, 36, male, Assistant, 3400, Spain, Madrid\cf11 \cb1 \
+\cf10 \cb2 */\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.createCollection(\cf12 'profiles'\cf11 ) \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.insertMany([\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 1\cf11 ,\cb1 \
+\cb2     firstname: \cf12 'Ivan'\cf11 ,\cb1 \
+\cb2     lastname: \cf12 'Petrov'\cf11 ,\cb1 \
+\cb2     age: \cf13 28\cf11 ,\cb1 \
+\cb2     gender: \cf12 'male'\cf11 ,\cb1 \
+\cb2     position: \cf12 'Product manager'\cf11 ,\cb1 \
+\cb2     salary: \cf13 5000\cf11 ,\cb1 \
+\cb2     country: \cf12 'Germany'\cf11 ,\cb1 \
+\cb2     city: \cf12 'Berlin'\cf11 \cb1 \
+\cb2   \},\cb1 \
+\cb2   \{\cb1 \
+\cb2     id: \cf13 2\cf11 ,\cb1 \
+\cb2     firstname: \cf12 'Svetlana'\cf11 ,\cb1 \
+\cb2     lastname: \cf12 'Ivanova'\cf11 ,\cb1 \
+\cb2     age: \cf13 38\cf11 ,\cb1 \
+\cb2     gender: \cf12 'female'\cf11 ,\cb1 \
+\cb2     position: \cf12 'Designerr'\cf11 ,\cb1 \
+\cb2     salary: \cf13 3000\cf11 ,\cb1 \
+\cb2     country: \cf12 'Germany'\cf11 ,\cb1 \
+\cb2     city: \cf12 'Bremen'\cf11 \cb1 \
+\cb2   \}\cb1 \
+\cb2 ])\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 3. \uc0\u1055 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1077 \u1083 \u1102  \u1089  id 3 \u1080 \u1079 \u1084 \u1077 \u1085 \u1080 \u1090 \u1077  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  city \u1085 \u1072  \u1087 \u1091 \u1089 \u1090 \u1086 \u1081  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateOne(\cb1 \
+\cb2   \{id: \cf13 3\cf11 \},\cb1 \
+\cb2   \{$set: \{city: []\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 4. \uc0\u1055 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1077 \u1083 \u1102  \u1089  id 3 \u1076 \u1086 \u1073 \u1072 \u1074 \u1100 \u1090 \u1077  \u1074  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074  city \u1075 \u1086 \u1088 \u1086 \u1076  Bremen.\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateOne(\cb1 \
+\cb2   \{id: \cf13 3\cf11 \},\cb1 \
+\cb2   \{$push: \{city: \cf12 'Bremen'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 5. \uc0\u1055 \u1086 \u1083 \u1100 \u1079 \u1086 \u1074 \u1072 \u1090 \u1077 \u1083 \u1103 \u1084  \u1089  \u1080 \u1084 \u1077 \u1085 \u1072 \u1084 \u1080  Mark \u1080  Oleg \u1080 \u1079 \u1084 \u1077 \u1085 \u1080 \u1090 \u1077  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  city \u1085 \u1072  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074  \u1080  \u1076 \u1086 \u1073 \u1072 \u1074 \u1100 \u1090 \u1077  \u1074  \u1085 \u1077 \u1075 \u1086  \u1075 \u1086 \u1088 \u1086 \u1076 \u1072  Madrid, Barcelona, Valencia (\u1074  2 \u1096 \u1072 \u1075 \u1072 )\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{firstname: \{$in: [\cf12 'Mark'\cf11 , \cf12 'Oleg'\cf11 ]\}\},\cb1 \
+\cb2   \{$set: \{city: []\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{firstname: \{$in: [\cf12 'Mark'\cf11 , \cf12 'Oleg'\cf11 ]\}\},\cb1 \
+\cb2   \{$push: \{city: \{$each: [\cf12 'Madrid'\cf11 , \cf12 'Barcelona'\cf11 , \cf12 'Valencia'\cf11 ]\}\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 6. \uc0\u1042 \u1089 \u1077 \u1084  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1072 \u1084  \u1076 \u1086 \u1073 \u1072 \u1074 \u1100 \u1090 \u1077  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  status \u1089 \u1086  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077 \u1084  \'91not defined\'92\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$set: \{status: \cf12 'not defined'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 7. \uc0\u1042 \u1089 \u1077 \u1084  \u1083 \u1102 \u1076 \u1103 \u1084  \u1089 \u1090 \u1072 \u1088 \u1096 \u1077  30 (\u1074 \u1082 \u1083 . 30) \u1086 \u1073 \u1085 \u1086 \u1074 \u1080 \u1090 \u1100  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  status \u1085 \u1072  \'91older than 30\'92\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{age: \{$gte: \cf13 30\cf11 \}\},\cb1 \
+\cb2   \{$set: \{status: \cf12 'older than 30'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 8. \uc0\u1042 \u1089 \u1077 \u1084  \u1083 \u1102 \u1076 \u1103 \u1084  \u1084 \u1083 \u1072 \u1076 \u1096 \u1077  30 \u1086 \u1073 \u1085 \u1086 \u1074 \u1080 \u1090 \u1100  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  status \u1085 \u1072  \'91younger than 30\'92\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{age: \{$lt: \cf13 30\cf11 \}\},\cb1 \
+\cb2   \{$set: \{status: \cf12 'younger than 30'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 9. \uc0\u1046 \u1077 \u1085 \u1097 \u1080 \u1085 \u1072 \u1084  \u1089 \u1090 \u1072 \u1088 \u1096 \u1077  40 \u1083 \u1077 \u1090  \u1091 \u1074 \u1077 \u1083 \u1080 \u1095 \u1080 \u1090 \u1100  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1091  \u1085 \u1072  1000\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{age: \{$gte: \cf13 40\cf11 \}, gender: \cf12 'female'\cf11 \},\cb1 \
+\cb2   \{$inc: \{salary: \cf13 1000\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 10. \uc0\u1051 \u1102 \u1076 \u1103 \u1084  \u1089  \u1072 \u1081 \u1076 \u1080  \u1086 \u1090  4 \u1076 \u1086  6 \u1091 \u1074 \u1077 \u1083 \u1080 \u1095 \u1080 \u1090 \u1100  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1091  \u1085 \u1072  300\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.updateMany(\cb1 \
+\cb2   \{id: \{$gte: \cf13 4\cf11 , $lte: \cf13 6\cf11 \}\},\cb1 \
+\cb2   \{$inc: \{salary: \cf13 300\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 11. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1087 \u1077 \u1088 \u1074 \u1099 \u1077  \u1090 \u1088 \u1080  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1072  \u1080 \u1079  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1080 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().limit(\cf13 3\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 12. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1089 \u1077  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099 , \u1085 \u1072 \u1095 \u1080 \u1085 \u1072 \u1103  \u1089  \u1090 \u1088 \u1077 \u1090 \u1100 \u1077 \u1075 \u1086 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().skip(\cf13 2\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 13. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  4, 5 \u1080  6 \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().skip(\cf13 3\cf11 ).limit(\cf13 3\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 14. \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099  \u1087 \u1086  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \u1091  \u1083 \u1102 \u1076 \u1077 \u1081  (\u1086 \u1090  \u1084 \u1083 \u1072 \u1076 \u1096 \u1077 \u1075 \u1086  \u1082  \u1089 \u1090 \u1072 \u1088 \u1096 \u1077 \u1084 \u1091 )\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{age: \cf13 1\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 15. \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099  \u1087 \u1086  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \u1091  \u1083 \u1102 \u1076 \u1077 \u1081  (\u1086 \u1090  \u1089 \u1090 \u1072 \u1088 \u1096 \u1077 \u1075 \u1086  \u1082  \u1084 \u1083 \u1072 \u1076 \u1096 \u1077 \u1084 \u1091 )\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{age: -\cf13 1\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 16. \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099  \u1087 \u1086  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1077  \u1083 \u1102 \u1076 \u1077 \u1081  (\u1086 \u1090  \u1089 \u1072 \u1084 \u1086 \u1081  \u1073 \u1086 \u1083 \u1100 \u1096 \u1086 \u1081  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1099  \u1076 \u1086  \u1089 \u1072 \u1084 \u1086 \u1081  \u1084 \u1072 \u1083 \u1077 \u1085 \u1100 \u1082 \u1086 \u1081 )\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{salary: -\cf13 1\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 17. \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1083 \u1102 \u1076 \u1077 \u1081  \u1074  \u1072 \u1083 \u1092 \u1072 \u1074 \u1080 \u1090 \u1085 \u1086 \u1084  \u1087 \u1086 \u1088 \u1103 \u1076 \u1082 \u1077  \u1087 \u1086  \u1080 \u1084 \u1077 \u1085 \u1080 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{firstname: \cf13 1\cf11 \})\
+\
+\
+\cf10 // \uc0\u1044 \u1047 :\cf11 \cb1 \
+\cf10 \cb2 // 1. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  3 \u1089 \u1072 \u1084 \u1099 \u1093  \u1084 \u1086 \u1083 \u1086 \u1076 \u1099 \u1093  \u1083 \u1102 \u1076 \u1077 \u1081 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{age: \cf13 1\cf11 \}).limit(\cf13 3\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 2. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  5 \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1086 \u1074  \u1089  \u1089 \u1072 \u1084 \u1086 \u1081  \u1073 \u1086 \u1083 \u1100 \u1096 \u1086 \u1081  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1086 \u1081 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{salary: -\cf13 1\cf11 \}).limit(\cf13 5\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 3. \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1083 \u1102 \u1076 \u1077 \u1081  \u1087 \u1086  \u1092 \u1072 \u1084 \u1080 \u1083 \u1080 \u1080  \u1074  \u1072 \u1083 \u1092 \u1072 \u1074 \u1080 \u1090 \u1085 \u1086 \u1084  \u1087 \u1086 \u1088 \u1103 \u1076 \u1082 \u1077 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().sort(\{lastname: \cf13 1\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 4. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  2, 3, 4 \u1080  5 \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.profiles.find().skip(\cf13 1\cf11 ).limit(\cf13 4\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 5. \uc0\u1056 \u1072 \u1079 \u1086 \u1073 \u1088 \u1072 \u1090 \u1100 \u1089 \u1103  \u1089  \u1090 \u1077 \u1084 , \u1082 \u1072 \u1082  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072 \u1077 \u1090  \u1086 \u1087 \u1077 \u1088 \u1072 \u1090 \u1086 \u1088  $slice\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1055 \u1056 \u1040 \u1050 \u1058 \u1048 \u1050 \u1040 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 1. \uc0\u1042  \u1041 \u1044  users \u1089 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  Workers\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 use users\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.createCollection(\cf12 'Workers'\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 2. \uc0\u1042  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  workers \u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1099  \u1089 \u1086  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1072 \u1084 \u1080  id, firstname, lastname, age, position, salary, skills. \u1048 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1081 \u1090 \u1077  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1077  \u1076 \u1072 \u1085 \u1085 \u1099 \u1077 :\cf11 \cb1 \
+\cb2   \cf10 // 1. Inga Petrova, 27, Barista, 1500, ['preparing drinks', 'cleaning equipment'] \cf11 \cb1 \
+\cb2   \cf10 // 2. Boris Orlov, 36, Server, 2400, ['taking orders', 'suggesting meals', 'taking payments']\cf11 \cb1 \
+\cb2   \cf10 // 3. Ivan Demidov, 32, Chef, 3200, ['preparing food', 'baking bread']\cf11 \cb1 \
+\cb2   \cf10 // 4. Marina Sidorova, 22, Hostess, 1700, ['greeting guests', 'seating guests', 'answering phone calls']\cf11 \cb1 \
+\cb2   \cf10 // 5. Olga Ivanova, 43, Sommelier, 2500, ['curating a wine list', 'creating wine pairings']\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2   db.workers.insertMany([\cb1 \
+\cb2     \{\cb1 \
+\cb2       id: \cf13 1\cf11 ,\cb1 \
+\cb2       firstname: \cf12 'Inga'\cf11 ,\cb1 \
+\cb2       lastname: \cf12 'Petrova'\cf11 ,\cb1 \
+\cb2       age: \cf13 27\cf11 ,\cb1 \
+\cb2       position: \cf12 'Barista'\cf11 ,\cb1 \
+\cb2       salary: \cf13 1500\cf11 ,\cb1 \
+\cb2       skills: [\cf12 'preparing drinks'\cf11 , \cf12 'cleaning equipment'\cf11 ]\cb1 \
+\cb2     \},\cb1 \
+\cb2     \{\cb1 \
+\cb2       id: \cf13 2\cf11 ,\cb1 \
+\cb2       firstname: \cf12 'Boris'\cf11 ,\cb1 \
+\cb2       lastname: \cf12 'Orlov'\cf11 ,\cb1 \
+\cb2       age: \cf13 36\cf11 ,\cb1 \
+\cb2       position: \cf12 'Server'\cf11 ,\cb1 \
+\cb2       salary: \cf13 2400\cf11 ,\cb1 \
+\cb2       skills: [\cf12 'taking orders'\cf11 , \cf12 'suggesting meals'\cf11 , \cf12 'taking payments'\cf11 ]\cb1 \
+\cb2     \},\cb1 \
+\cb2     \{\cb1 \
+\cb2       id: \cf13 3\cf11 ,\cb1 \
+\cb2       firstname: \cf12 'Ivan'\cf11 ,\cb1 \
+\cb2       lastname: \cf12 'Demidov'\cf11 ,\cb1 \
+\cb2       age: \cf13 32\cf11 ,\cb1 \
+\cb2       position: \cf12 'Chef'\cf11 ,\cb1 \
+\cb2       salary: \cf13 3200\cf11 ,\cb1 \
+\cb2       skills: [\cf12 'preparing food'\cf11 , \cf12 'baking bread'\cf11 ]\cb1 \
+\cb2     \},\cb1 \
+\cb2     \{\cb1 \
+\cb2       id: \cf13 4\cf11 ,\cb1 \
+\cb2       firstname: \cf12 'Marina'\cf11 ,\cb1 \
+\cb2       lastname: \cf12 'Sidorova'\cf11 ,\cb1 \
+\cb2       age: \cf13 22\cf11 ,\cb1 \
+\cb2       position: \cf12 'Hostess'\cf11 ,\cb1 \
+\cb2       salary: \cf13 1700\cf11 ,\cb1 \
+\cb2       skills: [\cf12 'greeting guests'\cf11 , \cf12 'seating guests'\cf11 , \cf12 'answering phone calls'\cf11 ]\cb1 \
+\cb2     \},\cb1 \
+\cb2     \{\cb1 \
+\cb2       id: \cf13 5\cf11 ,\cb1 \
+\cb2       firstname: \cf12 'Olga'\cf11 ,\cb1 \
+\cb2       lastname: \cf12 'Ivanova'\cf11 ,\cb1 \
+\cb2       age: \cf13 43\cf11 ,\cb1 \
+\cb2       position: \cf12 'Sommelier'\cf11 ,\cb1 \
+\cb2       salary: \cf13 2500\cf11 ,\cb1 \
+\cb2       skills: [\cf12 'curating a wine list'\cf11 , \cf12 'creating wine pairings'\cf11 ]\cb1 \
+\cb2     \}\cb1 \
+\cb2   ])\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 3. \uc0\u1056 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1091  \u1089  id 3 \u1091 \u1074 \u1077 \u1083 \u1080 \u1095 \u1080 \u1090 \u1100  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1091  \u1085 \u1072  400\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.updateOne(\cb1 \
+\cb2   \{id: \cf13 3\cf11 \},\cb1 \
+\cb2   \{$inc: \{salary: \cf13 400\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 4. \uc0\u1056 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1072 \u1084  \u1089  id 1 \u1080  4 \u1080 \u1079 \u1084 \u1077 \u1085 \u1080 \u1090 \u1100  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1091  \u1085 \u1072  1800\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.updateMany(\cb1 \
+\cb2   \{id: \{$in: [\cf13 1\cf11 , \cf13 4\cf11 ]\}\},\cb1 \
+\cb2   \{$set: \{salary: \cf13 1800\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 5. \uc0\u1042 \u1089 \u1077 \u1084  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1072 \u1084  \u1074  \u1084 \u1072 \u1089 \u1089 \u1080 \u1074  skills \u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1085 \u1072 \u1074 \u1099 \u1082  'attending group meetings'\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$push: \{skills: \cf12 'attending group meetings'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 6. \uc0\u1042 \u1089 \u1077 \u1084  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1072 \u1084  \u1076 \u1086 \u1073 \u1072 \u1074 \u1080 \u1090 \u1100  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  gender \u1089 \u1086  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077 \u1084  'not defined'\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.updateMany(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{$set: \{gender: \cf12 'not defined'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 7. \uc0\u1056 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1094 \u1072 \u1084  Olga, Marina, Inga \u1074  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  gender \u1079 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100  female\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.updateMany(\cb1 \
+\cb2   \{firstname: \{$in: [\cf12 'Inga'\cf11 , \cf12 'Marina'\cf11 , \cf12 'Olga'\cf11 ]\}\},\cb1 \
+\cb2   \{$set: \{gender: \cf12 'female'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 8. \uc0\u1056 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1072 \u1084  Boris \u1080  Ivan \u1074  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  gender \u1079 \u1072 \u1087 \u1080 \u1089 \u1072 \u1090 \u1100  male\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.updateMany(\cb1 \
+\cb2   \{firstname: \{$in: [\cf12 'Boris'\cf11 , \cf12 'Ivan'\cf11 ]\}\},\cb1 \
+\cb2   \{$set: \{gender: \cf12 'male'\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 9. \uc0\u1042 \u1099 \u1073 \u1086 \u1088 \u1082 \u1080 :\cf11 \cb1 \
+\cf10 \cb2 // - \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1089 \u1077 \u1093  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1079 \u1072 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1102 \u1097 \u1080 \u1093  2000 \u1080  \u1073 \u1086 \u1083 \u1077 \u1077 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{salary: \{$gte: \cf13 2000\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // - \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1089 \u1077 \u1093  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074  \u1082 \u1088 \u1086 \u1084 \u1077  \u1087 \u1077 \u1088 \u1074 \u1086 \u1075 \u1086 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find().skip(\cf13 1\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // - \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074  \u1089  \u1090 \u1088 \u1077 \u1090 \u1100 \u1077 \u1075 \u1086  \u1087 \u1086  \u1087 \u1103 \u1090 \u1086 \u1075 \u1086 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find().skip(\cf13 2\cf11 ).limit(\cf13 3\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // - \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074  \u1087 \u1086  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \u1091 : \u1086 \u1090  \u1089 \u1072 \u1084 \u1086 \u1075 \u1086  \u1084 \u1083 \u1072 \u1076 \u1096 \u1077 \u1075 \u1086  \u1076 \u1086  \u1089 \u1072 \u1084 \u1086 \u1075 \u1086  \u1089 \u1090 \u1072 \u1088 \u1096 \u1077 \u1075 \u1086 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find().sort(\{age: \cf13 1\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // - \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1090 \u1088 \u1077 \u1093  \u1089 \u1072 \u1084 \u1099 \u1093  \u1089 \u1090 \u1072 \u1088 \u1096 \u1080 \u1093  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find().sort(\{age: -\cf13 1\cf11 \}).limit(\cf13 3\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // - \uc0\u1054 \u1090 \u1089 \u1086 \u1088 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1090 \u1100  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074  \u1087 \u1086  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1077 : \u1086 \u1090  \u1089 \u1072 \u1084 \u1086 \u1081  \u1073 \u1086 \u1083 \u1100 \u1096 \u1086 \u1081  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1099  \u1076 \u1086  \u1089 \u1072 \u1084 \u1086 \u1081  \u1084 \u1072 \u1083 \u1077 \u1085 \u1100 \u1082 \u1086 \u1081 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find().sort(\{salary: -\cf13 1\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // - \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1095 \u1077 \u1083 \u1086 \u1074 \u1077 \u1082 \u1072 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081  \u1079 \u1072 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1077 \u1090  \u1084 \u1077 \u1085 \u1100 \u1096 \u1077  \u1074 \u1089 \u1077 \u1093 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find().sort(\{salary: \cf13 1\cf11 \}).limit(\cf13 1\cf11 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // $slice\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090  \u1089  \u1080 \u1084 \u1077 \u1085 \u1077 \u1084  Inga, \u1074  skills \u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1090 \u1086 \u1083 \u1100 \u1082 \u1086  \u1087 \u1077 \u1088 \u1074 \u1099 \u1081  \u1085 \u1072 \u1074 \u1099 \u1082 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{firstname: \cf12 'Inga'\cf11 \},\cb1 \
+\cb2   \{skills: \{$slice: \cf13 1\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090  \u1089  \u1080 \u1084 \u1077 \u1085 \u1077 \u1084  Inga, \u1074  skills \u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1090 \u1086 \u1083 \u1100 \u1082 \u1086  \u1087 \u1086 \u1089 \u1083 \u1077 \u1076 \u1085 \u1080 \u1081  \u1085 \u1072 \u1074 \u1099 \u1082 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{firstname: \cf12 'Inga'\cf11 \},\cb1 \
+\cb2   \{skills: \{$slice: -\cf13 1\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090  \u1089  \u1080 \u1084 \u1077 \u1085 \u1077 \u1084  Ivan, \u1074  skills \u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1090 \u1086 \u1083 \u1100 \u1082 \u1086  \u1074 \u1090 \u1086 \u1088 \u1086 \u1081  \u1085 \u1072 \u1074 \u1099 \u1082 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{firstname: \cf12 'Ivan'\cf11 \},\cb1 \
+\cb2   \{skills: \{$slice: [\cf13 1\cf11 , \cf13 1\cf11 ]\}\} \cf10 // [skip, limit]\cf11 \cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1047 \u1072 \u1076 \u1072 \u1095 \u1080  \u1085 \u1072  $slice\cf11 \cb1 \
+\cf10 \cb2 // 1. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1087 \u1077 \u1088 \u1074 \u1099 \u1081  \u1085 \u1072 \u1074 \u1099 \u1082  \u1091  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1072  Boris\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{firstname: \cf12 'Boris'\cf11 \},\cb1 \
+\cb2   \{skills: \{$slice: \cf13 1\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 2. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1091  \u1074 \u1089 \u1077 \u1093  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074  \u1087 \u1086  \u1087 \u1086 \u1089 \u1083 \u1077 \u1076 \u1085 \u1077 \u1084 \u1091  \u1085 \u1072 \u1074 \u1099 \u1082 \u1091 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{\},\cb1 \
+\cb2   \{skills: \{$slice: -\cf13 1\cf11 \}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // 3. \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1090 \u1086 \u1088 \u1086 \u1081  \u1085 \u1072 \u1074 \u1099 \u1082  \u1091  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1072  Marina\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\cb1 \
+\cb2   \{firstname: \cf12 'Marina'\cf11 \},\cb1 \
+\cb2   \{skills: \{$slice: [\cf13 1\cf11 , \cf13 1\cf11 ]\}\}\cb1 \
+\cb2 )\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // COUNT\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1055 \u1086 \u1089 \u1095 \u1080 \u1090 \u1072 \u1090 \u1100  \u1086 \u1073 \u1097 \u1077 \u1077  \u1082 \u1086 \u1083 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1086 \u1074  \u1074  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1080 \cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.countDocuments()\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1055 \u1086 \u1089 \u1095 \u1080 \u1090 \u1072 \u1090 \u1100  \u1082 \u1086 \u1083 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1086 \u1074  \u1074  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1080 , \u1075 \u1076 \u1077  firstname Boris\cf11 \cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.find(\{firstname: \cf12 'Boris'\cf11 \}).count()\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cb2 db.workers.countDocuments(\{firstname: \cf12 'Boris'\cf11 \})\cb1 \
+\cb2 \uc0\u8203 \cb1 \
+\cf10 \cb2 // \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1082 \u1086 \u1083 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1088 \u1072 \u1073 \u1086 \u1090 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1079 \u1072 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1102 \u1097 \u1080 \u1093  2000 \u1080  \u1073 \u1086 \u1083 \u1077 \u1077 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 db.workers.find(\cb1 \
+\cb2   \{salary: \{$gte: \cf13 2000\cf11 \}\}\cb1 \
+\cb2 ).count()\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb2 \
+\cf11 \cb1 \
+\cf10 \cb2 // \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1082 \u1086 \u1083 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086  \u1083 \u1102 \u1076 \u1077 \u1081 , \u1079 \u1072 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1102 \u1097 \u1080 \u1093  1800\
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 db.workers.find(\cb1 \
+\cb2   \{salary: \cf13 1800\cf11 \}\cb1 \
+\cb2 ).count()\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf14 \cb15 // 1. \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1041 \u1044  Shop\cf16 \cb1 \
+\cf14 \cb15 // 2. \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1090 \u1100  \u1082 \u1086 \u1083 \u1083 \u1077 \u1082 \u1094 \u1080 \u1102  orders \u1089 \u1086  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1072 \u1084 \u1080  id, customer, product, amount, city, \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  \u1089 \u1083 \u1077 \u1076 \u1091 \u1102 \u1097 \u1080 \u1077  \u1076 \u1072 \u1085 \u1085 \u1099 \u1077 :\cf16 \cb1 \
+\
+\cf14 \cb15 // 1 Olga Apple 15.55 Berlin\cf16 \cb1 \
+\cf14 \cb15 // 2 Anna Apple 10.05 Madrid\cf16 \cb1 \
+\cf14 \cb15 // 3 Olga Kiwi 9.6 Berlin\cf16 \cb1 \
+\cf14 \cb15 // 4 Anton Apple 20 Roma\cf16 \cb1 \
+\cf14 \cb15 // 5 Olga Banana 8 Madrid\cf16 \cb1 \
+\cf14 \cb15 // 6 Petr Orange 18.3 Paris\cf16 \cb1 \
+\
+\cf17 \cb15 use\cf16  \cf17 users\cf16 \cb1 \
+\cb15 \uc0\u8203 \cb1 \
+\cf17 \cb15 db\cf16 .\cf18 createCollection\cf16 (\cf19 'orders'\cf16 )\cb1 \
+\cb15 \uc0\u8203 \cb1 \
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 insertMany\cf16 ([\cb1 \
+\cb15     \{\cb1 \
+\cb15       \cf17 id:\cf16  \cf20 1\cf16 ,\cb1 \
+\cb15       \cf17 customer:\cf16  \cf19 'Olga'\cf16 ,\cb1 \
+\cb15       \cf17 product:\cf16  \cf19 'Apple'\cf16 ,\cb1 \
+\cb15       \cf17 amount:\cf16  \cf20 15.55\cf16 ,\cb1 \
+\cb15       \cf17 city:\cf16  \cf19 'Berlin'\cf16 \cb1 \
+\cb15     \},\cb1 \
+\cb15     \{\cb1 \
+\cb15         \cf17 id:\cf16  \cf20 2\cf16 ,\cb1 \
+\cb15         \cf17 customer:\cf16  \cf19 'Anna'\cf16 ,\cb1 \
+\cb15         \cf17 product:\cf16  \cf19 'Apple'\cf16 ,\cb1 \
+\cb15         \cf17 amount:\cf16  \cf20 10.05\cf16 ,\cb1 \
+\cb15         \cf17 city:\cf16  \cf19 'Madrid'\cf16 \cb1 \
+\cb15     \},\cb1 \
+\cb15     \{\cb1 \
+\cb15         \cf17 id:\cf16  \cf20 3\cf16 ,\cb1 \
+\cb15         \cf17 customer:\cf16  \cf19 'Olga'\cf16 ,\cb1 \
+\cb15         \cf17 product:\cf16  \cf19 'Kiwi'\cf16 ,\cb1 \
+\cb15         \cf17 amount:\cf16  \cf20 9.6\cf16 ,\cb1 \
+\cb15         \cf17 city:\cf16  \cf19 'Berlin'\cf16 \cb1 \
+\cb15     \},\cb1 \
+\cb15     \{\cb1 \
+\cb15         \cf17 id:\cf16  \cf20 4\cf16 ,\cb1 \
+\cb15         \cf17 customer:\cf16  \cf19 'Anton'\cf16 ,\cb1 \
+\cb15         \cf17 product:\cf16  \cf19 'Apple'\cf16 ,\cb1 \
+\cb15         \cf17 amount:\cf16  \cf20 20\cf16 ,\cb1 \
+\cb15         \cf17 city:\cf16  \cf19 'Roma'\cf16 \cb1 \
+\cb15     \},\cb1 \
+\cb15     \{\cb1 \
+\cb15         \cf17 id:\cf16  \cf20 5\cf16 ,\cb1 \
+\cb15         \cf17 customer:\cf16  \cf19 'Olga'\cf16 ,\cb1 \
+\cb15         \cf17 product:\cf16  \cf19 'Banana'\cf16 ,\cb1 \
+\cb15         \cf17 amount:\cf16  \cf20 8\cf16 ,\cb1 \
+\cb15         \cf17 city:\cf16  \cf19 'Madrid'\cf16 \cb1 \
+\cb15     \},\cb1 \
+\cb15     \{\cb1 \
+\cb15         \cf17 id:\cf16  \cf20 6\cf16 ,\cb1 \
+\cb15         \cf17 customer:\cf16  \cf19 'Petr'\cf16 ,\cb1 \
+\cb15         \cf17 product:\cf16  \cf19 'Orange'\cf16 ,\cb1 \
+\cb15         \cf17 amount:\cf16  \cf20 18.3\cf16 ,\cb1 \
+\cb15         \cf17 city:\cf16  \cf19 'Paris'\cf16 \cb1 \
+\cb15     \}\cb1 \
+\cb15   ])\cb1 \
+\
+\cb15   \cf14 // 3. \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1074 \u1089 \u1077 \u1075 \u1086  \u1073 \u1099 \u1083 \u1086  \u1089 \u1086 \u1074 \u1077 \u1088 \u1096 \u1077 \u1085 \u1086  \u1087 \u1086 \u1082 \u1091 \u1087 \u1086 \u1082 \cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 countDocuments\cf16 ()\cb1 \
+\
+\cb15   \cf14 // 4. \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1088 \u1072 \u1079  \u1073 \u1099 \u1083 \u1080  \u1082 \u1091 \u1087 \u1083 \u1077 \u1085 \u1099  \u1103 \u1073 \u1083 \u1086 \u1082 \u1080 \cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 find\cf16 (\{\cf17 product:\cf16  \cf19 'Apple'\cf16 \}).\cf18 count\cf16 ()\cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 countDocuments\cf16 (\{ \cf17 product:\cf16  \cf19 'Apple'\cf16  \})\cb1 \
+\
+\cb15   \cf14 // 5. \cf16 \cb1 \
+\cb15   \cb1 \
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 find\cf16 ().\cf18 sort\cf16 (\{\cf17 amount:\cf16  \cf20 1\cf16 \})\cb1 \
+\
+\cb15   \cf14 // 6.\cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 find\cf16 ().\cf18 sort\cf16 (\{\cf17 amount:\cf16  -\cf20 1\cf16 \}).\cf18 limit\cf16 (\cf20 3\cf16 )\cb1 \
+\
+\cb15   \cf14 // 7. \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1085 \u1072 \u1080 \u1084 \u1077 \u1085 \u1086 \u1074 \u1072 \u1085 \u1080 \u1103  \u1074 \u1089 \u1077 \u1093  \u1082 \u1091 \u1087 \u1083 \u1077 \u1085 \u1085 \u1099 \u1093  \u1087 \u1088 \u1086 \u1076 \u1091 \u1082 \u1090 \u1086 \u1074  (['Apple', 'Kiwi', 'Banana', 'Orange'])\cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 distinct\cf16 (\cf19 'product'\cf16 )\cb1 \
+\
+\cb15   \cf14 // 8.\cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 countDocuments\cf16 (\{ \cf17 city:\cf16  \cf19 'Berlin'\cf16  \})\cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 find\cf16 (\{\cf17 city:\cf16  \cf19 'Berlin'\cf16 \}).\cf18 count\cf16 ()\cb1 \
+\
+\cb15   \cf14 // 9.\cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 countDocuments\cf16 (\{ \cf17 product:\cf16  \cf19 'Apple'\cf16 , \cf17 city:\cf16  \{\cf17 $in:\cf16  [\cf19 'Berlin'\cf16 , \cf19 'Madrid'\cf16 ] \}\})\cb1 \
+\
+\cb15   \cf14 // 10.\cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 shop\cf16 .\cf18 deleteMany\cf16 (\{\})\cb1 \
+\
+\cb15   \cf14 //11. \uc0\u1055 \u1086 \u1089 \u1095 \u1080 \u1090 \u1072 \u1090 \u1100  \u1089 \u1082 \u1086 \u1083 \u1100 \u1082 \u1086  \u1087 \u1086 \u1090 \u1088 \u1072 \u1090 \u1080 \u1083 \u1080   \u1074 \u1089 \u1077  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1099  \u1074  \u1088 \u1072 \u1079 \u1073 \u1080 \u1074 \u1082 \u1077  \u1087 \u1086  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072 \u1084 \cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15       [\cb1 \
+\cb15           \{\cf17 $match:\cf16  \{\}\},\cb1 \
+\cb15           \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$customer'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\}\cb1 \
+\cb15       ]\cb1 \
+\cb15   )\cb1 \
+\
+\cb15   \cf14 // 12. \cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 customer:\cf16  \cf19 'Olga'\cf16 \}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$customer'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 13.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 customer:\cf16  \{\cf17 $in:\cf16  [\cf19 'Olga'\cf16 , \cf19 'Anton'\cf16 ]\}\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$customer'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 14.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$product'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$product'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\},\cb1 \
+\cb15         \{\cf17 $sort:\cf16  \{\cf17 total:\cf16  \cf20 1\cf16 \}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$product'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\},\cb1 \
+\cb15     ]\cb1 \
+\cb15 ).\cf18 sort\cf16 (\{\cf17 total:\cf16  \cf20 1\cf16 \})\cb1 \
+\
+\cf14 \cb15 // 15.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$city'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\},\cb1 \
+\cb15         \{\cf17 $sort:\cf16  \{\cf17 total:\cf16  -\cf20 1\cf16 \}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 16.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 updateMany\cf16 (\cb1 \
+\cb15     \{\},\cb1 \
+\cb15     \{\cf17 $set:\cf16  \{\cf17 count:\cf16  \cf20 0\cf16 \}\}\cb1 \
+\cb15   )\cb1 \
+\
+\cb15   \cf14 // 17. \uc0\u1053 \u1072 \u1081 \u1090 \u1080  \u1086 \u1073 \u1097 \u1091 \u1102  \u1089 \u1090 \u1086 \u1080 \u1084 \u1086 \u1089 \u1090 \u1100  \u1074 \u1089 \u1077 \u1093  \u1087 \u1086 \u1082 \u1091 \u1087 \u1086 \u1082 \cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 'total_sum'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$amount'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 18.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 updateMany\cf16 (\cb1 \
+\cb15     \{\cf17 id:\cf16  \{\cf17 $in:\cf16  [\cf20 1\cf16 , \cf20 3\cf16 ]\}\},\cb1 \
+\cb15     \{\cf17 $set:\cf16  \{\cf17 count:\cf16  \cf20 3\cf16 \}\}\cb1 \
+\cb15   )\cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 updateMany\cf16 (\cb1 \
+\cb15     \{\cf17 id:\cf16  \cf20 4\cf16 \},\cb1 \
+\cb15     \{\cf17 $set:\cf16  \{\cf17 count:\cf16  \cf20 2\cf16 \}\}\cb1 \
+\cb15   )\cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 updateMany\cf16 (\cb1 \
+\cb15     \{\},\cb1 \
+\cb15     \{\cf17 $inc:\cf16  \{\cf17 count:\cf16  \cf20 1\cf16 \}\}\cb1 \
+\cb15   )\cb1 \
+\
+\cb15   \cf14 // 19. \cf16 \cb1 \
+\
+\cb15   \cf17 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 product:\cf16  \cf19 'Apple'\cf16 \}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$product'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$count'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 20.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 find\cf16 (\{ \cf17 customer:\cf16  \cf19 'Olga'\cf16  \}).\cf18 count\cf16 ()\cb1 \
+\
+\cf14 \cb15 // 21.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 customer:\cf16  \cf19 'Olga'\cf16 \}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$customer'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$count'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 22. \cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 customer:\cf16  \{\cf17 $in:\cf16  [\cf19 'Olga'\cf16 , \cf19 'Anton'\cf16 ]\}\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$customer'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$count'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 24.\cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 customer:\cf16  \cf19 'Olga'\cf16 \}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$city'\cf16 \}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\cf14 \cb15 // 25. \cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 product:\cf16  \cf19 'Apple'\cf16 , \cf17 city:\cf16  \cf19 'Berlin'\cf16 \}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 '$product'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$count'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\
+\
+\cf14 \cb15 // 26. \cf16 \cb1 \
+\
+\cf17 \cb15 db\cf16 .\cf17 orders\cf16 .\cf18 aggregate\cf16 (\cb1 \
+\cb15     [\cb1 \
+\cb15         \{\cf17 $match:\cf16  \{\cf17 city:\cf16  \{\cf17 $in:\cf16  [\cf19 'Madrid'\cf16 , \cf19 'Paris'\cf16 ]\}\}\},\cb1 \
+\cb15         \{\cf17 $group:\cf16  \{\cf17 _id:\cf16  \cf19 'all_product_count'\cf16 , \cf17 total:\cf16  \{\cf17 $sum:\cf16  \cf19 '$count'\cf16 \}\}\}\cb1 \
+\cb15     ]\cb1 \
+\cb15 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf11 \cb2 \
+\
+select model_name\
+from airliners\
+where range_ >= 4200;\
+\
+select id\
+from tickets\
+where price <= 13200;\
+\
+select trip_code\
+from trips\
+where departure in (\'82SVO\'91, \'82VKO\'91, \'82DME\'91)\
+and status = \'82Departed\'91;\
+\
+select \
+side_number,\
+range_\
+from airliners\
+where (range_ > 1000 and range_ <= 2500) or range_ >= 6000;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 select \
+id\
+from tickets\
+where ((price < 65000 and service_class = \'82Business\'91) or (price > 15000 and service_class = \'82Economy\'91))\
+and trip_id not in ((\'82hcdhjdjvdfv\'91, \'82cdhdjcjdcdcn\'91, \'82djcnjcskjcns\'91);\
+\
+select id\
+from tickets\
+where trip_id is null;\
+\
+select \
+id,\
+trip_id\
+from tickets\
+where service_class not in (\'82Economy\'91, \'82Business\'91)\
+or service_class is null;\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \
+\cf11 \cb1 \
+}

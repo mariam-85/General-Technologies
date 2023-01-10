@@ -1,0 +1,267 @@
+// 1.
+
+use universities
+
+db.createCollection('courses')
+
+db.courses.insertMany([
+    {
+      id: 1,
+      title: 'International Relations',
+      students_count: 7,
+      weeks: 10,
+      points: 10,
+      university_title: 'Harvard'
+    },
+    {
+        id: 2,
+        title: 'Political Science',
+        students_count: 8,
+        weeks: 9,
+        points: 10,
+        university_title: 'Yale'
+      },
+
+      {
+        id: 3,
+        title: 'Economy',
+        students_count: 3,
+        weeks: 6,
+        points: 12,
+        university_title: 'Brown'
+      },
+      {
+        id: 4,
+        title: 'International relations',
+        students_count: 5,
+        weeks: 5,
+        points: 13,
+        university_title: 'Brown'
+      },
+      {
+        id: 5,
+        title: 'Economy',
+        students_count: 6,
+        weeks: 8,
+        points: 9,
+        university_title: 'Yale'
+      },
+      {
+        id: 6,
+        title: 'German Literature',
+        students_count: 3,
+        weeks: 7,
+        points: 10,
+        university_title: 'Harvard'
+      },
+      {
+        id: 7,
+        title: 'Economy',
+        students_count: 15,
+        weeks: 12,
+        points: 15,
+        university_title: 'Harvard'
+      }
+    ])
+
+    // 2.
+    db.courses.countDocuments()
+
+    // 3. 
+
+    db.courses.countDocuments({ university_title: 'Harvard' })
+
+    // 4.
+
+    db.courses.countDocuments({ university_title: {$in: ['Harvard', 'Yale'] } })
+
+    // 5. 
+
+    db.courses.countDocuments({ weeks: {$lte: 10 } })
+
+    // 6.
+
+    db.courses.updateMany(
+        {},
+        $rename: {'ponts': 'points'}
+    )
+
+    // 7.
+
+
+    db.courses.aggregate(
+        [
+            {$match: {university_title: 'Yale'}},
+            {$group: {_id: '$university_title', total: {$sum: '$points'}}}
+        ]
+    )
+
+    db.courses.aggregate(
+        [
+            {$match: {}},
+            {$group: {_id: 'total_points', total: {$sum: '$points'}}}
+        ]
+    )
+
+    // 8.
+
+    db.courses.aggregate(
+        [
+            {$match: {university_title: {$in: ['Yale', 'Brown']}}},
+            {$group: {_id: '$university_title', total: {$sum: '$weeks'}}}
+        ]
+    )
+
+    // 9. 
+
+    db.courses.aggregate(
+        [
+            {$match: {university_title: {$in: ['Yale', 'Brown']}}},
+            {$group: {_id: 'total_sum_of_weeks', total: {$sum: '$weeks'}}}
+        ]
+    )
+
+    // 10. 
+
+    db.courses.insertMany([
+        {
+            id: 8,
+            title: 'Economy',
+            students_count: 5,
+            weeks: 7,
+            points: 13,
+            university_title: 'Oxford'
+          },
+          {
+            id: 9,
+            title: 'English Literature',
+            students_count: 4,
+            weeks: 5,
+            points: 10,
+            university_title: 'Cambridge'
+          },
+          {
+            id: 10,
+            title: 'International Relations',
+            students_count: 5,
+            weeks: 10,
+            points: 12,
+            university_title: 'BremenUniversity'
+          }
+    ])
+
+    // 11. 
+
+    db.courses.updateMany(
+        {},
+        {$set: {country: 'not defined'}}
+      )
+
+      // 12. 
+
+      db.courses.updateMany(
+        {university_title: {$in: ['Harvard', 'Yale', 'Brown'] }},
+        {$set: {country: 'USA'}}
+      )
+
+      db.courses.updateMany(
+        {university_title: {$in: ['Oxford', 'Cambridge'] }},
+        {$set: {country: 'UK'}}
+      )
+
+      db.courses.updateMany(
+        {university_title: 'BremenUniversity'},
+        {$set: {country: 'Germany'}}
+      )
+
+      // 13. 
+
+      db.courses.countDocuments(
+          { title: 'International Relations' },
+          { weeks: {$lt: 8 } }
+          )
+
+     db.courses.countDocuments({ title: 'International Relations', weeks: {$lt: 8 } })
+     db.courses.find({ title: 'International Relations', weeks: {$lt: 8 } }).count()
+
+     // 14.
+
+     db.courses.find().sort({weeks: 1})
+
+     // 15.
+
+     db.courses.find({university_title: 'Harvard'}).sort({points: -1})
+
+     // 16.
+
+     db.courses.aggregate([
+         {$match: {}},
+         {$group: {_id: '$university_title', total: {$sum: '$weeks'}}}
+     ]).
+     sort({ total: 1 })
+
+     db.courses.aggregate([
+        {$match: {}},
+        {$group: {_id: '$university_title', total: {$sum: '$weeks'}}},
+        {$sort: {total: 1}}
+    ])
+
+    // 17. 
+
+    db.courses.updateMany(
+        {weeks: {$lte: 8}},
+        {$inc: {points: 3}}
+      )
+
+      // 18.
+
+      db.courses.updateMany(
+        {},
+        {$set: {students_country: []}}
+      )
+
+      // 19.
+
+      db.courses.updateMany(
+        {country: 'USA'},
+        {$push: { students_country: {$each: ['Germany', 'UK', 'Poland', 'Italy'] }}}
+      )
+
+      db.courses.updateMany(
+        {country: 'Germany'},
+        {$push: { students_country: 'France' }}
+      )
+
+      db.courses.updateMany(
+        {country: 'UK'},
+        {$push: { students_country: {$each:['India', 'China', 'Denmark'] }}}
+      )
+
+      db.courses.updateMany(
+        {},
+        {$push: { students_country: {$each:['USA', 'Japan'] }}}
+      )
+
+
+
+
+      ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      db.posts.aggregate([
+          {
+              $lookup:
+              {
+                  from:'comments',
+                  localField: 'title',
+                  foreignField: 'postTitle',
+                  as: 'comments'
+              }
+          }
+      ])
+
+
+
+
+
+
+
